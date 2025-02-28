@@ -1,0 +1,418 @@
+/* Base Reset & Global Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+.vw-header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vw-navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.vw-nav-links a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.vw-nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.vw-footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Containers */
+.vw-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Headings */
+.vw-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.vw-subheading {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Layout */
+.vw-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.vw-dashboard-links,
+.vw-dashboard-stats {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Dashboard Title */
+.vw-dashboard-title {
+    /* text-align: center; */
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Management Options */
+.vw-dashboard-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vw-dashboard-links li {
+    margin-bottom: 15px;
+}
+
+.vw-dashboard-links .vw-btn {
+    display: flex;
+    text-align: center;
+    width: 40%;
+    background: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-left: 30%;
+}
+
+.vw-dashboard-links .vw-btn:hover {
+    background: #1e7e34;
+}
+
+/* System Statistics */
+.vw-dashboard-stats ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vw-dashboard-stats li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+/* Grid Layout for Cards */
+.vw-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card Styling */
+.vw-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+}
+
+.vw-card-poll {
+    width: 80%;
+    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+}
+
+.vw-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.vw-card h3,
+.vw-card h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.vw-card p {
+    color: #555;
+}
+
+.vw-edit-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.vw-edit-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Poll-Specific Styling */
+.vw-poll-date {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.vw-poll-action {
+    margin-top: 15px;
+}
+
+.vw-voted-msg {
+    font-size: 0.95em;
+    color: #333;
+}
+
+.vw-voted-msg a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.vw-voted-msg a:hover {
+    text-decoration: underline;
+}
+
+.vw-no-polls {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Buttons */
+.vw-btn {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.vw-btn:hover {
+    background: #1e7e34;
+}
+
+/* Dashboard Sections */
+.vw-dashboard-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Action Bar (for Add button) */
+.vw-action-bar {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* Table Container */
+.vw-table-container {
+    overflow-x: auto;
+}
+
+/* Table Styling */
+.vw-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.vw-table th,
+.vw-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.vw-table th {
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* Link Styling */
+.vw-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.vw-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Login Page Styling */
+.vw-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.vw-login-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 350px;
+}
+
+.vw-login-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Groups */
+.vw-form-group {
+    margin-bottom: 15px;
+}
+
+.vw-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.vw-form-group input[type="text"],
+.vw-form-group input[type="password"],
+.vw-form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.vw-form-group textarea {
+    width: 90%;        /* Occupies full width of its container */
+    min-height: 120px;  /* Sets a minimum height */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;   /* Allow only vertical resizing */
+}
+
+
+/* Error & Registration Message */
+.vw-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Option Row Styling */
+.vw-option-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Adjust label and input within option row */
+.vw-option-row label {
+    flex: 1;
+    margin: 0;
+}
+.vw-option-row input {
+    flex: 3;
+    margin: 0;
+}
+
+/* Remove Button Styling */
+.vw-remove-btn {
+    background: #dc3545;  /* Red background */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.vw-remove-btn:hover {
+    background: #c82333;
+}
+
+.vw-card-footer {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.vw-register-msg {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.vw-register-msg a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.vw-register-msg a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Image Styling (if applicable) */
+.vw-gallery .vw-card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
