@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.content {
+  flex: 1; /* This container will grow to push the footer to the bottom */
+}
+
+/* Optional: Adjust card spacing and navbar styling */
+.card {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Update footer to match header color (e.g., dark) */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #343a40; /* Same as a Bootstrap bg-dark */
+  color: #fff; /* White text for contrast */
+}
