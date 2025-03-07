@@ -1,0 +1,12 @@
+{
+    "name": "vendor/recapcha",
+    "authors": [
+        {
+            "name": "vinayhp22",
+            "email": "vinayhp.xworkz@gmail.com"
+        }
+    ],
+    "require": {
+        "google/cloud-recaptcha-enterprise": "^2.0"
+    }
+}
