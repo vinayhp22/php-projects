@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /linklynx/
+
+# If the requested resource is not a real file or directory...
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ...rewrite URLs matching one or more alphanumeric characters to public/redirect.php with the short code as a GET parameter.
+RewriteRule ^([a-zA-Z0-9]+)$ public/redirect.php?c=$1 [L,QSA]
