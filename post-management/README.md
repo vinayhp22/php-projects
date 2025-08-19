@@ -174,7 +174,22 @@ If you plan to enhance this project, you might consider adding:
 Let me know if you'd like a markdown file version (`README.md`) to download or paste directly into your GitHub repo.
 ```
 
+---
 
+## Images
+
+### Home Page
+![Home Page](project-images-for-readme/image.png)
+### Create Page
+![Create Page](project-images-for-readme/image-4.png)
+### Show Page
+![Show Page](project-images-for-readme/image-1.png)
+### Update Page
+![Update Page](project-images-for-readme/image-2.png)
+### Delete Page
+![Delete Page](project-images-for-readme/image-3.png)
+
+---
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
